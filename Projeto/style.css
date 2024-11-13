@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 30px 90px;
+    background-color: #5a5a5a;
+    font-family: "Faculty Glyphic", sans-serif;
+    color: #fff;
+}
+
+/* h1,
+h2,
+h3 {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 700;
+    }
+    
+    p {
+        font-family: "Faculty Glyphic", sans-serif;
+        font-weight: 400;
+        } */
+
+header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    width: 200px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Controle da altura do conteúdo */
+.card-conteudo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.card.open .card-conteudo {
+    max-height: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    color: #333333;
+    background-color: #FFD700;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #b69b01;
+}
