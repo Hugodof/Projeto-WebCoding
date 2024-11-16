@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
 
-    <!-- Link do css -->
+    <!-- Link do css padrão -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link do css específico -->
     <link rel="stylesheet" href="stylereceita.css">
     <!-- Link do js -->
     <script src="script.js"></script>
@@ -16,6 +18,17 @@
 
     <!-- Topo -->
     <header>
+        <input 
+        type="text" 
+        id="pesquisa" 
+        placeholder="Buscar receita..." 
+        onkeyup="filtrarReceitas()" 
+        style="margin-top: 20px; padding: 10px; width: 300px;">
+        <div>
+            <button onclick="toggleTodos('abrir')">Abrir Todos</button>
+            <button onclick="toggleTodos('fechar')">Fechar Todos</button>
+            <button onclick="alternarTema()">Alternar Tema</button>
+        </div>        
         <h1>Receitas</h1>
         <article>
             <p>Escolha sua favorita e tente você mesmo!</p>
@@ -24,7 +37,7 @@
 
     <!-- Principal -->
     <main>
-        <!-- Cards dos integrantes -->
+        <!-- Cards das receitas -->
          <section class="cards-container"> 
 
             <!-- Unidade de card -->
@@ -52,44 +65,46 @@
                 <img src="../imgs/lasanha-bolonhesa.jpg" alt="Lasanha à Bolonhesa">
                 <h3>Lasanha à Bolonhesa</h3>
                 <span class="material-symbols-outlined">
-                    keyboard_arrow_down
+                  keyboard_arrow_down
                 </span>
                 <div class="card-conteudo">
-                    <p>Receita favorita de Davi</p>
-                    <h4>Ingredientes:
-                        Molho Bolonhesa:
-                        500g de carne moída
-                        2 colheres de sopa de azeite
-                        1 cebola picada
-                        2 dentes de alho picados
-                        500ml de molho de tomate ou 2 latas de tomate pelado
-                        1 colher de sopa de extrato de tomate
-                        1 colher de chá de açúcar
-                        Sal e pimenta-do-reino a gosto
-                        1 colher de chá de orégano ou manjericão seco
-                        Montagem:
-                        250g de massa para lasanha (pré-cozida ou fresca)
-                        300g de queijo mussarela
-                        100g de queijo parmesão ralado
-                        Modo de Preparo:
-                        Molho Bolonhesa:
-                        
-                        Aqueça o azeite em uma panela, refogue a cebola e o alho até dourarem.
-                        Adicione a carne moída e cozinhe até que ela fique dourada e soltinha.
-                        Acrescente o molho de tomate, o extrato de tomate, o açúcar e os temperos. Deixe cozinhar em fogo baixo por 20 minutos, mexendo ocasionalmente.
-                        Montagem:
-                        
-                        Preaqueça o forno a 180°C.
-                        Em um refratário, espalhe uma camada fina de molho bolonhesa no fundo.
-                        Coloque uma camada de massa para lasanha, cubra com mais molho e uma camada de queijo mussarela.
-                        Repita as camadas até terminar os ingredientes, finalizando com queijo parmesão por cima.
-                        Assar:
-                        
-                        Cubra com papel alumínio e leve ao forno por 25 minutos.
-                        Retire o papel e deixe gratinar por mais 10 minutos.
-                    </h4>
+                  <p><strong>Receita favorita de Davi</strong></p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li><strong>Molho Bolonhesa:</strong></li>
+                    <li>500g de carne moída</li>
+                    <li>2 colheres de sopa de azeite</li>
+                    <li>1 cebola picada</li>
+                    <li>2 dentes de alho picados</li>
+                    <li>500ml de molho de tomate ou 2 latas de tomate pelado</li>
+                    <li>1 colher de sopa de extrato de tomate</li>
+                    <li>1 colher de chá de açúcar</li>
+                    <li>Sal e pimenta-do-reino a gosto</li>
+                    <li>1 colher de chá de orégano ou manjericão seco</li>
+                  </ul>
+                  <ul>
+                    <li><strong>Montagem:</strong></li>
+                    <li>250g de massa para lasanha (pré-cozida ou fresca)</li>
+                    <li>300g de queijo mussarela</li>
+                    <li>100g de queijo parmesão ralado</li>
+                  </ul>
+                  <h4>Modo de Preparo:</h4>
+                  <ol>
+                    <li><strong>Molho Bolonhesa:</strong></li>
+                    <li>Aqueça o azeite em uma panela, refogue a cebola e o alho até dourarem.</li>
+                    <li>Adicione a carne moída e cozinhe até que ela fique dourada e soltinha.</li>
+                    <li>Acrescente o molho de tomate, o extrato de tomate, o açúcar e os temperos. Deixe cozinhar em fogo baixo por 20 minutos, mexendo ocasionalmente.</li>
+                    <li><strong>Montagem:</strong></li>
+                    <li>Preaqueça o forno a 180°C.</li>
+                    <li>Em um refratário, espalhe uma camada fina de molho bolonhesa no fundo.</li>
+                    <li>Coloque uma camada de massa para lasanha, cubra com mais molho e uma camada de queijo mussarela.</li>
+                    <li>Repita as camadas até terminar os ingredientes, finalizando com queijo parmesão por cima.</li>
+                    <li><strong>Assar:</strong></li>
+                    <li>Cubra com papel alumínio e leve ao forno por 25 minutos.</li>
+                    <li>Retire o papel e deixe gratinar por mais 10 minutos.</li>
+                  </ol>
                 </div>
-            </div>
+              </div>              
 
 
          </section> 

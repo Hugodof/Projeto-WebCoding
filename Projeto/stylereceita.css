@@ -1,0 +1,126 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Reenie+Beanie&family=Roboto:wght@400;500;700&display=swap');
+
+/* Estilo global */
+body {
+    padding: 30px;
+    background-color: #5a5a5a;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Centralização do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Container de cards com flexbox */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1400px; /* Limita o tamanho máximo do container */
+}
+
+/* Card de receita */
+.card {
+    border-radius: 10px;
+    background-color: #3a3a3a;
+    width: 320px; /* Largura ajustada para caber várias receitas */
+    cursor: pointer;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #2c2c2c;
+    transform: scale(1.02);
+}
+
+/* Imagem da receita */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Conteúdo da receita */
+.card-conteudo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+/* Card aberto */
+.card.open .card-conteudo {
+    max-height: 1000px; /* Permite maior altura quando expandido */
+}
+
+/* Títulos e subtítulos */
+.card-conteudo h4 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #FFD700; /* Destaque nos subtítulos */
+    border-bottom: 1px solid #FFD700;
+    padding-bottom: 5px;
+}
+
+.card-conteudo p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #FFF;
+}
+
+/* Listas de ingredientes e preparo */
+.card-conteudo ul,
+.card-conteudo ol {
+    margin: 10px 0 10px 20px;
+    padding-left: 20px;
+}
+
+.card-conteudo ul {
+    list-style: disc;
+}
+
+.card-conteudo ol {
+    list-style: decimal;
+}
+
+/* Responsividade para telas menores (dispositivos móveis) */
+@media (max-width: 1200px) {
+    .card {
+        width: 280px; /* Ajusta a largura dos cards para telas médias */
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 100%; /* Faz com que os cards ocupem toda a largura disponível */
+    }
+
+    .cards-container {
+        justify-content: center;
+        gap: 10px; /* Reduz o espaço entre os cards */
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px; /* Diminui o padding para telas menores */
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+}
