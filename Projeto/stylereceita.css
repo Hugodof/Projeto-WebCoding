@@ -124,3 +124,32 @@ header {
         margin-bottom: 30px;
     }
 }
+
+.avaliacao-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.avaliacao-container label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.avaliacao-container select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #FFD700;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+.avaliacao-container .media-nota {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #FFD700;
+}
+

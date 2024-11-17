@@ -24,6 +24,7 @@
         placeholder="Buscar receita..." 
         onkeyup="filtrarReceitas()" 
         style="margin-top: 20px; padding: 10px; width: 300px;">
+        <!-- Funções gerais-->
         <div>
             <button onclick="toggleTodos('abrir')">Abrir Todos</button>
             <button onclick="toggleTodos('fechar')">Fechar Todos</button>
@@ -104,6 +105,20 @@
                     <li>Retire o papel e deixe gratinar por mais 10 minutos.</li>
                   </ol>
                 </div>
+                <!--Avaliar a receita-->
+                <div class="avaliacao-container">
+                    <label for="nota">Avalie esta receita:</label>
+                    <select id="nota" onchange="avaliarReceita(this)">
+                        <option value="0">Selecione</option>
+                        <option value="1">1 - Ruim</option>
+                        <option value="2">2 - Regular</option>
+                        <option value="3">3 - Boa</option>
+                        <option value="4">4 - Ótima</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                    <p class="media-nota">Média: 0</p>
+                </div>
+                
               </div>              
 
 

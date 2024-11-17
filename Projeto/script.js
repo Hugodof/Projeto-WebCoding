@@ -53,3 +53,25 @@ function mostrarDetalhes(card, mensagem) {
         tooltip.remove();
     });
 }
+
+const avaliacoes = {};
+
+function avaliarReceita(select) {
+    const card = select.closest(".card");
+    const titulo = card.querySelector("h3").textContent;
+    const nota = parseInt(select.value);
+
+    if (!avaliacoes[titulo]) {
+        avaliacoes[titulo] = [];
+    }
+
+    if (nota > 0) {
+        avaliacoes[titulo].push(nota);
+
+        const soma = avaliacoes[titulo].reduce((acc, curr) => acc + curr, 0);
+        const media = (soma / avaliacoes[titulo].length).toFixed(1);
+
+        const mediaNota = card.querySelector(".media-nota");
+        mediaNota.textContent = `Média: ${media}`;
+    }
+}
