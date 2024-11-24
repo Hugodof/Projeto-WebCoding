@@ -41,26 +41,6 @@
         <!-- Cards das receitas -->
          <section class="cards-container"> 
 
-            <!-- Unidade de card -->
-            <!-- <div class="card" onclick="abrirCard(this)"
-                <img src="../imgs/foto-hugo.jpg" alt="Hugo">
-                <h3>Hugo de Oliveira Fonsêca</h3>
-                <span class="material-symbols-outlined">
-                    keyboard_arrow_down
-                </span>
-                <div class="card-conteudo">
-                    <p>Aluno de Ciência da Computação</p>
-                    <ul>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>HTML + CSS</li>
-                        <li>Bootstrap</li>
-                        <li>AWS (básico)</li>
-                        <li>Node.js (básico)</li>
-                    </ul>
-                </div>
-            </div> -->
-
             <!-- Unidade de receita -->
             <div class="card" onclick="abrirCard(this)">
                 <img src="../imgs/lasanha-bolonhesa.jpg" alt="Lasanha à Bolonhesa">
@@ -119,7 +99,55 @@
                     <p class="media-nota">Média: 0</p>
                 </div>
                 
-              </div>              
+              </div>
+              
+              <!-- Unidade de receita -->
+            <div class="card" onclick="abrirCard(this)">
+                <img src="../imgs/peixe.png" alt="Peixe ao leite de coco">
+                <h3>Peixe ao leite de coco</h3>
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <div class="card-conteudo">
+                  <p><strong>Receita favorita de Hugo</strong></p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li>1 kg de filé de peixe</li>
+                    <li>200 ml de leite de coco</li>
+                    <li>2 tomate</li>
+                    <li>1 pimentão amarelo</li>
+                    <li>suco de 1 limão</li>
+                    <li>azeite de oliva</li>
+                    <li>1 dente de alho</li>
+                    <li>1 pimentão verde</li>
+                    <li>1 cebola</li>
+                    <li>cheiro-verde a gosto</li>
+                    <li>1 pitada de pimenta-do-reino</li>
+                    <li>sal a gosto</li>
+                  </ul>
+                  <h4>Modo de Preparo:</h4>
+                  <ol>
+                    <li>Aqueça um pouco de azeite de oliva, refoque o alho, acrescente o corante e o leite de coco.</li>
+                    <li>Faça uma camada de cebola, tomate, e pimentão e em seguida os filés já temperados com sal, pimenta do reino e o suco de limão.</li>
+                    <li>Alterne as camadas e por último coloque o cheiro-verde por cima.</li>
+                    <li>Sirva com arroz e salada.</li>
+                  </ol>
+                </div>
+                <!--Avaliar a receita-->
+                <div class="avaliacao-container">
+                    <label for="nota">Avalie esta receita:</label>
+                    <select id="nota" onchange="avaliarReceita(this)">
+                        <option value="0">Selecione</option>
+                        <option value="1">1 - Ruim</option>
+                        <option value="2">2 - Regular</option>
+                        <option value="3">3 - Boa</option>
+                        <option value="4">4 - Ótima</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                    <p class="media-nota">Média: 0</p>
+                </div>
+                
+              </div>
 
 
          </section> 
@@ -129,7 +157,7 @@
     <footer>
         <nav>
             <a href="index.html">Grupo</a>
-            <a href="contato.html">Avaliar</a>
+            <a href="avaliar.html">Avaliar</a>
         </nav>
     </footer>
 
