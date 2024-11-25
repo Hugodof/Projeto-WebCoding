@@ -149,7 +149,63 @@
                 
               </div>
 
-
+              <!-- Unidade de receita -->
+            <div class="card" onclick="abrirCard(this)">
+              <img src="../imgs/Torta de Frango.png" alt="Torta de Frango de Liquidificador">
+              <h3>Torta de Frango de Liquidificador</h3>
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+              <div class="card-conteudo">
+                <p><strong>Receita favorita de Alex</strong></p>
+                <h4>Ingredientes:</h4>
+                <ul>
+                  <li>2 xícaras (chá) de leite</li>
+                  <li>1 xícara (chá) de óleo</li>
+                  <li>3 ovos</li>
+                  <li>Sal a gosto</li>
+                  <li>3 xícaras (chá) de farinha de trigo</li>
+                  <li>1 colher (sopa) de fermento em pó químico</li>
+                  <li>Margarina e farinha de trigo para untar</li>
+                </ul>
+                <h4>Recheio:</h4>
+                <ul>
+                  <li>4 colheres (sopa) de azeite</li>
+                  <li>1 cebola picada</li>
+                  <li>1 tomate picado</li>
+                  <li>2 colheres (sopa) de extrato de tomate</li>
+                  <li>1/2 lata de milho escorrida</li>
+                  <li>1/2 xícara (chá) de cheiro-verde picado</li>
+                  <li>Sal e pimenta-do-reino a gosto</li>
+                </ul>
+                <h4>Modo de Preparo:</h4>
+                <ol>
+                  <li>Para o recheio, em uma panela, aqueça o azeite em fogo médio e refogue a cebola e o alho por 3 minutos.</li>
+                  <li>Adicione o tomate, o extrato, a ervilha e o milho e refogue por mais 3 minutos.</li>
+                  <li>Acrescente o frango, o cheiro-verde, sal e pimenta e refogue por mais 5 minutos.</li>
+                  <li>Desligue e deixe esfriar.</li>
+                  <li>Enquanto isso, bata no liquidificador o leite, o óleo, os ovos e o sal.</li>
+                  <li>Transfira para uma tigela, acrescente a farinha e o fermento, misturando com uma colher.</li>
+                  <li>Despeje metade da massa em uma fôrma de 30cm X 22cm untada e enfarinhada, espalhe o recheio por cima e então cubra com o restante da massa.</li>
+                  <li>Polvilhe o queijo ralado e leve ao forno médio, preaquecido, por 40 minutos ou até dourar.</li>
+                  <li>Deixe amornar, corte em quadrados e sirva em seguida.</li>
+                </ol>
+              </div>
+              <!--Avaliar a receita-->
+              <div class="avaliacao-container">
+                  <label for="nota">Avalie esta receita:</label>
+                  <select id="nota" onchange="avaliarReceita(this)">
+                      <option value="0">Selecione</option>
+                      <option value="1">1 - Ruim</option>
+                      <option value="2">2 - Regular</option>
+                      <option value="3">3 - Boa</option>
+                      <option value="4">4 - Ótima</option>
+                      <option value="5">5 - Excelente</option>
+                  </select>
+                  <p class="media-nota">Média: 0</p>
+              </div>
+              
+            </div>
          </section> 
     </main>
 
