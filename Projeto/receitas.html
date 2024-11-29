@@ -206,6 +206,54 @@
               </div>
               
             </div>
+                         <!-- Unidade de receita -->
+            <div class="card" onclick="abrirCard(this)">
+
+                <img src="../imgs/strogonoff.png" alt="Strogonoff de Frango">
+
+                <h3>Strogonoff de Frango</h3>
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <div class="card-conteudo">
+                  <p><strong>Receita favorita de João Pedro</strong></p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li>1 kg de peito de frango cortado em cubos</li>
+                    <li>1 cebola grande picada</li>
+                    <li>3 dentes de alho picados</li>
+                    <li>2 latas de creme de leite</li>
+                    <li>1 lata de champignon fatiado</li>
+                    <li>2 colheres de sopa de mostarda</li>
+                    <li>2 colheres de sopa de ketchup</li>
+                    <li>Sal e pimenta do reino a gosto</li>
+                    <li>2 colheres de sopa de óleo</li>
+                    <li>Batata palha para servir (opcional)</li>
+                  </ul>
+                  <h4>Modo de Preparo:</h4>
+                  <ol>
+                    <li>Refogue o frango: Em uma panela grande, aqueça o óleo e refogue o frango até dourar por todos os lados.</li>
+                    <li>Adicione os temperos: Acrescente a cebola picada e o alho picado e refogue por mais alguns minutos, até a cebola ficar transparente.</li>
+                    <li>Cozinhe os temperos: Adicione o champignon, a mostarda, o ketchup, o sal e a pimenta do reino. Misture bem para incorporar todos os sabores.</li>
+                    <li>Creme de leite: Despeje o creme de leite e cozinhe em fogo baixo por cerca de 5 minutos, ou até o molho engrossar levemente.</li>
+                    <li>Sirva: Sirva o estrogonofe quente, acompanhado de arroz branco e batata palha.</li>
+                  </ol>
+                </div>
+                <!--Avaliar a receita-->
+                <div class="avaliacao-container">
+                    <label for="nota">Avalie esta receita:</label>
+                    <select id="nota" onchange="avaliarReceita(this)">
+                        <option value="0">Selecione</option>
+                        <option value="1">1 - Ruim</option>
+                        <option value="2">2 - Regular</option>
+                        <option value="3">3 - Boa</option>
+                        <option value="4">4 - Ótima</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                    <p class="media-nota">Média: 0</p>
+                </div>
+                
+              </div>
          </section> 
     </main>
 
